@@ -1,0 +1,88 @@
+#coding=utf-8
+import web
+import json
+from WXBizDataCrypt import WXBizDataCrypt
+import urllib2
+import time
+import datetime
+
+appId = 'wx24ff63b17aa9251f'
+secret = '3935aac884f4ec0fe38e0d8af33640ec'
+
+urls = (
+    '/order', 'index',
+    '/order/create', 'add_order',
+    '/order/get', 'get_order',
+    '/order/follow', 'follow_order',
+    '/order/cancel', 'cancel_order'
+)
+
+url = 'https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code'
+
+db = web.database(dbn='mysql', host='127.0.0.1', user='root', pw='1234.com', db='fly')
+
+class index:
+    def GET(self):
+        orders = list(db.select('s_order', where="id>0"))
+        return json.dumps(orders)
+
+
+class add_order:
+    def POST(self):
+        i = web.input()
+        js_code = i.js_code
+        response = urllib2.urlopen(url%(appId, secret, js_code))
+        content = json.loads(response.read())
+        openid = content["openid"]
+        now = datetime.datetime.now()
+        create_time_str = now.strftime('%Y-%m-%d %H:%M:%S')
+        create_time = time.mktime(now.timetuple())
+        n = db.insert('s_order', user_id=openid, item_name=i.item_name, price=i.price, item_pic=i.item_pic, money_pic=i.money_pic, follow_id="", status="create", create_time = create_time, cancel="")
+        return {"order_id" : 1, "create_time" : create_time_str }
+
+
+class get_order:
+    def GET(self):
+        i =  web.input()
+        order_id = i.order_id
+        order = db.select('s_order', where="id=%s"%order_id)[0]
+        now = datetime.datetime.now()
+        now_timestamp = time.mktime(now.timetuple())
+        create_time = order.create_time if order.create_time is not None else time.mktime(now.timetuple())
+        #大于15分钟或者用户自己取消
+        if now_timestamp - create_time > 15 * 60 or order.cancel == "yes":
+            timeout = "true"
+        else:
+            timeout = "false"
+        result = {"timeout" : timeout, "user_id" : order.user_id, 
+                  "item_name" : order.item_name, "price" : order.price, 
+                  "item_pic" : order.item_pic, "create_time" : order.create_time, 
+                  "money_pic" : order.money_pic, "follow_id" : order.follow_id, 
+                  "status" : order.status
+                  }
+        return json.dumps(result)
+        
+
+class follow_order:
+    def POST(self):
+        i = web.input()
+        js_code = i.js_code
+        response = urllib2.urlopen(url%(appId, secret, js_code))
+        content = json.loads(response.read())
+        openid = content["openid"]
+        #openid = "1234567"
+        db.update('s_order', where="id=%s"%i.order_id, follow_id=openid, status="paid")
+        return "success"
+
+
+class cancel_order:
+    def POST(self):
+        i = web.input()
+        order = db.update('s_order', where="id=%s"%i.order_id, cancel="yes")
+        return "success"
+
+
+
+if __name__ == "__main__":
+    app = web.application(urls, globals())
+    app.run()
