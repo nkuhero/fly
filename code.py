@@ -18,7 +18,8 @@ urls = (
     '/order/cancel', 'cancel_order',
     '/order/openid', 'get_openid',
     '/order/list', 'order_list',
-    '/order/follow/list', 'follow_list'
+    '/order/follow/list', 'follow_list',
+    '/order/moneypic', 'get_moneypic'
 )
 
 url = 'https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code'
@@ -31,6 +32,14 @@ class index:
         return json.dumps(orders)
 
 
+class get_moneypic:
+    def GET(self):
+        i = web.input()
+        openid = i.openid
+        pay_info = db.select('pay_info', where="user_id='%s'"%openid)[0]
+        result = {"user_id" : openid, "money_pic" : pay_info.money_pic}
+        return json.dumps(result)
+
 class add_order:
     def POST(self):
         i = web.data()
@@ -39,6 +48,11 @@ class add_order:
         now = datetime.datetime.now()
         create_time_str = now.strftime('%Y-%m-%d %H:%M:%S')
         create_time = time.mktime(now.timetuple())
+        try:
+            db.insert('pay_info', user_id=openid, money_pic=i["money_pic"])
+        except:
+            db.update('pay_info', where="user_id=%s"%openid, money_pic=i["money_pic"])
+
         n = db.insert('s_order', nick_name=i["nick_name"].encode("utf-8"), user_id=openid, item_name=i["item_name"].encode("utf-8"), price=i["price"], item_pic=i["item_pic"], money_pic=i["money_pic"], follow_id="", status="create", create_time = create_time, cancel="")
         return json.dumps({"order_id" : n, "create_time" : create_time_str })
 
@@ -55,14 +69,20 @@ class order_list:
     def GET(self):
         i = web.input()
         openid = i.openid
-        order_list = list(db.select('s_order', where="user_id='%s'"%openid))
+        order_list = list(db.select('s_order', where="user_id='%s'"%openid, order="create_time desc"))
         result_list = []
+        now = datetime.datetime.now()
+        now_timestamp = time.mktime(now.timetuple())
         for order in order_list:
             create_time = order.create_time
             create_time_str = datetime.datetime.fromtimestamp(create_time).strftime(('%Y-%m-%d %H:%M:%S'))
             follow_time = order.follow_time
             follow_time_str = datetime.datetime.fromtimestamp(follow_time).strftime(('%Y-%m-%d %H:%M:%S')) if follow_time  else ""
-            result = {"user_id" : order.user_id,
+            if now_timestamp - create_time > 1 * 60 or order.cancel == "yes":
+                timeout = "true"
+            else:
+                timeout = "false"
+            result = {"id" : order.id, "timeout" : timeout, "user_id" : order.user_id,
                   "item_name" : order.item_name, "price" : order.price,
                   "item_pic" : order.item_pic, "create_time" : create_time_str,
                   "money_pic" : order.money_pic, "follow_id" : order.follow_id,
@@ -77,14 +97,21 @@ class follow_list:
     def GET(self):
         i = web.input()
         openid = i.openid
-        order_list = list(db.select('s_order', where="follow_id='%s'"%openid))
+        order_list = list(db.select('s_order', where="follow_id='%s'"%openid, order="create_time desc"))
         result_list = []
+        now = datetime.datetime.now()
+        now_timestamp = time.mktime(now.timetuple())
         for order in order_list:
             create_time = order.create_time
             create_time_str = datetime.datetime.fromtimestamp(create_time).strftime(('%Y-%m-%d %H:%M:%S'))
             follow_time = order.follow_time
             follow_time_str = datetime.datetime.fromtimestamp(follow_time).strftime(('%Y-%m-%d %H:%M:%S')) if follow_time else ""
-            result = {"user_id" : order.user_id,
+
+            if now_timestamp - create_time > 1 * 60 or order.cancel == "yes":
+                timeout = "true"
+            else:
+                timeout = "false"
+            result = {"id" : order.id, "timeout" : timeout, "user_id" : order.user_id,
                   "item_name" : order.item_name, "price" : order.price,
                   "item_pic" : order.item_pic, "create_time" : create_time_str,
                   "money_pic" : order.money_pic, "follow_id" : order.follow_id,

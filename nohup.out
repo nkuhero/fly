@@ -1,0 +1,1687 @@
+0.0 (1): SELECT * FROM s_order WHERE id=2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/utils.py", line 705, in __getitem__
+    raise IndexError, str(i)
+IndexError: 0
+
+127.0.0.1:41486 - - [08/Sep/2017 14:26:00] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE id=1
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/utils.py", line 705, in __getitem__
+    raise IndexError, str(i)
+IndexError: 0
+
+127.0.0.1:41488 - - [08/Sep/2017 14:26:04] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE id=0
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/utils.py", line 705, in __getitem__
+    raise IndexError, str(i)
+IndexError: 0
+
+127.0.0.1:41490 - - [08/Sep/2017 14:26:33] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:41493 - - [08/Sep/2017 14:27:12] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='od5AB0cZmhaOL0S50ZAp-QdTbiyE'
+127.0.0.1:41495 - - [08/Sep/2017 14:27:41] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41497 - - [08/Sep/2017 14:27:52] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+
+127.0.0.1:41571 - - [08/Sep/2017 16:51:07] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41570 - - [08/Sep/2017 16:51:07] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41574 - - [08/Sep/2017 16:51:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:41577 - - [08/Sep/2017 16:51:56] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41579 - - [08/Sep/2017 16:51:57] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41580 - - [08/Sep/2017 16:51:57] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41583 - - [08/Sep/2017 16:52:35] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41586 - - [08/Sep/2017 16:52:36] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41585 - - [08/Sep/2017 16:52:36] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41589 - - [08/Sep/2017 16:52:48] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41591 - - [08/Sep/2017 16:52:50] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41593 - - [08/Sep/2017 16:52:50] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41596 - - [08/Sep/2017 16:53:26] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:41598 - - [08/Sep/2017 16:53:54] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:41600 - - [08/Sep/2017 16:54:18] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41603 - - [08/Sep/2017 16:54:23] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41602 - - [08/Sep/2017 16:54:23] "HTTP/1.1 GET /order/list" - 200 OK
+
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41606 - - [08/Sep/2017 16:54:35] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41608 - - [08/Sep/2017 16:54:35] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41611 - - [08/Sep/2017 16:55:27] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:41613 - - [08/Sep/2017 16:55:36] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:41616 - - [08/Sep/2017 16:55:37] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41615 - - [08/Sep/2017 16:55:37] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41619 - - [08/Sep/2017 16:55:42] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41621 - - [08/Sep/2017 16:55:42] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41623 - - [08/Sep/2017 16:55:42] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41625 - - [08/Sep/2017 16:56:03] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41628 - - [08/Sep/2017 16:56:04] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41627 - - [08/Sep/2017 16:56:04] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41631 - - [08/Sep/2017 16:56:26] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41634 - - [08/Sep/2017 16:56:27] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41633 - - [08/Sep/2017 16:56:27] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41637 - - [08/Sep/2017 16:56:34] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41640 - - [08/Sep/2017 16:56:35] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41639 - - [08/Sep/2017 16:56:35] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41643 - - [08/Sep/2017 16:56:41] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41645 - - [08/Sep/2017 16:56:42] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41646 - - [08/Sep/2017 16:56:42] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41649 - - [08/Sep/2017 16:56:47] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41651 - - [08/Sep/2017 16:56:48] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41653 - - [08/Sep/2017 16:56:48] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41655 - - [08/Sep/2017 16:56:59] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41658 - - [08/Sep/2017 16:57:00] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41657 - - [08/Sep/2017 16:57:00] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41662 - - [08/Sep/2017 16:57:24] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41664 - - [08/Sep/2017 16:57:25] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41666 - - [08/Sep/2017 16:57:25] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:41669 - - [08/Sep/2017 16:59:43] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:41672 - - [08/Sep/2017 17:02:19] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:41674 - - [08/Sep/2017 17:02:21] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:41676 - - [08/Sep/2017 17:02:22] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='od5AB0cZmhaOL0S50ZAp-QdTbiyE'
+127.0.0.1:41678 - - [08/Sep/2017 17:02:29] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='od5AB0cZmhaOL0S50ZAp-QdTbiyE'
+127.0.0.1:41680 - - [08/Sep/2017 17:02:35] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=2
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/utils.py", line 705, in __getitem__
+    raise IndexError, str(i)
+IndexError: 0
+
+127.0.0.1:41684 - - [08/Sep/2017 17:07:15] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:41686 - - [08/Sep/2017 17:07:17] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41689 - - [08/Sep/2017 17:07:26] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+0.0 (1): SELECT * FROM s_order WHERE user_id=''
+127.0.0.1:41692 - - [08/Sep/2017 17:08:03] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41691 - - [08/Sep/2017 17:08:03] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41695 - - [08/Sep/2017 17:08:04] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:41697 - - [08/Sep/2017 17:08:07] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41699 - - [08/Sep/2017 17:08:07] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41700 - - [08/Sep/2017 17:08:07] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41703 - - [08/Sep/2017 17:08:15] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41705 - - [08/Sep/2017 17:08:15] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41706 - - [08/Sep/2017 17:08:15] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41709 - - [08/Sep/2017 17:08:23] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41711 - - [08/Sep/2017 17:08:24] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41713 - - [08/Sep/2017 17:08:24] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41717 - - [08/Sep/2017 17:11:35] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''
+0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+127.0.0.1:41720 - - [08/Sep/2017 17:11:36] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41719 - - [08/Sep/2017 17:11:36] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41723 - - [08/Sep/2017 17:11:47] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''
+127.0.0.1:41725 - - [08/Sep/2017 17:11:48] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+127.0.0.1:41726 - - [08/Sep/2017 17:11:48] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41729 - - [08/Sep/2017 17:12:01] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''
+127.0.0.1:41731 - - [08/Sep/2017 17:12:02] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+127.0.0.1:41732 - - [08/Sep/2017 17:12:02] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41735 - - [08/Sep/2017 17:12:04] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''
+0.0 (1): SELECT * FROM s_order WHERE follow_id=''127.0.0.1:41737 - - [08/Sep/2017 17:12:05] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41738 - - [08/Sep/2017 17:12:05] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41741 - - [08/Sep/2017 17:12:37] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41743 - - [08/Sep/2017 17:12:38] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41745 - - [08/Sep/2017 17:12:38] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41748 - - [08/Sep/2017 17:14:05] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41750 - - [08/Sep/2017 17:14:06] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41752 - - [08/Sep/2017 17:14:06] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41754 - - [08/Sep/2017 17:14:56] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41757 - - [08/Sep/2017 17:14:57] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41756 - - [08/Sep/2017 17:14:57] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41763 - - [08/Sep/2017 17:17:31] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41765 - - [08/Sep/2017 17:17:32] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41767 - - [08/Sep/2017 17:17:32] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41769 - - [08/Sep/2017 17:17:46] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41772 - - [08/Sep/2017 17:17:46] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41771 - - [08/Sep/2017 17:17:46] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41775 - - [08/Sep/2017 17:17:52] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41778 - - [08/Sep/2017 17:17:53] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41777 - - [08/Sep/2017 17:17:53] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41781 - - [08/Sep/2017 17:17:57] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41784 - - [08/Sep/2017 17:17:58] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41783 - - [08/Sep/2017 17:17:58] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41787 - - [08/Sep/2017 17:18:43] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:41789 - - [08/Sep/2017 17:18:44] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41790 - - [08/Sep/2017 17:18:44] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41793 - - [08/Sep/2017 17:19:19] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41796 - - [08/Sep/2017 17:19:20] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41798 - - [08/Sep/2017 17:19:20] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41800 - - [08/Sep/2017 17:21:10] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41803 - - [08/Sep/2017 17:21:10] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41802 - - [08/Sep/2017 17:21:10] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41807 - - [08/Sep/2017 17:22:31] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41810 - - [08/Sep/2017 17:22:31] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41809 - - [08/Sep/2017 17:22:31] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41815 - - [08/Sep/2017 17:25:45] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41817 - - [08/Sep/2017 17:25:46] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41819 - - [08/Sep/2017 17:25:46] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41821 - - [08/Sep/2017 17:26:52] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41824 - - [08/Sep/2017 17:26:53] "HTTP/1.1 GET /order/follow/list" - 200 OK
+ 127.0.0.1:41823 - - [08/Sep/2017 17:26:53] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41828 - - [08/Sep/2017 17:27:35] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41830 - - [08/Sep/2017 17:27:35] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41832 - - [08/Sep/2017 17:27:35] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41834 - - [08/Sep/2017 17:28:07] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41836 - - [08/Sep/2017 17:28:07] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41838 - - [08/Sep/2017 17:28:07] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41840 - - [08/Sep/2017 17:29:14] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41843 - - [08/Sep/2017 17:29:14] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41842 - - [08/Sep/2017 17:29:14] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41846 - - [08/Sep/2017 17:29:21] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41848 - - [08/Sep/2017 17:29:21] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41850 - - [08/Sep/2017 17:29:21] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41853 - - [08/Sep/2017 17:29:34] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41856 - - [08/Sep/2017 17:29:34] "HTTP/1.1 GET /order/follow/list" - 200 OK
+ 127.0.0.1:41855 - - [08/Sep/2017 17:29:34] "HTTP/1.1 GET /order/list" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:41859 - - [08/Sep/2017 17:29:36] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+127.0.0.1:41861 - - [08/Sep/2017 17:29:59] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41863 - - [08/Sep/2017 17:30:00] "HTTP/1.1 GET /order/list" - 200 OK
+ 127.0.0.1:41864 - - [08/Sep/2017 17:30:00] "HTTP/1.1 GET /order/follow/list" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:41867 - - [08/Sep/2017 17:30:01] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+127.0.0.1:41869 - - [08/Sep/2017 17:30:40] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41872 - - [08/Sep/2017 17:30:41] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41871 - - [08/Sep/2017 17:30:41] "HTTP/1.1 GET /order/list" - 200 OK
+
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:41875 - - [08/Sep/2017 17:30:42] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:41877 - - [08/Sep/2017 17:30:43] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+127.0.0.1:41879 - - [08/Sep/2017 17:30:58] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41881 - - [08/Sep/2017 17:30:59] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41882 - - [08/Sep/2017 17:30:59] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:41885 - - [08/Sep/2017 17:31:01] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+127.0.0.1:41889 - - [08/Sep/2017 17:34:39] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41891 - - [08/Sep/2017 17:34:40] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41892 - - [08/Sep/2017 17:34:40] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:41895 - - [08/Sep/2017 17:34:42] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+127.0.0.1:41898 - - [08/Sep/2017 17:36:04] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:41900 - - [08/Sep/2017 17:36:05] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41901 - - [08/Sep/2017 17:36:05] "HTTP/1.1 GET /order/list" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:41904 - - [08/Sep/2017 17:36:31] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+127.0.0.1:41906 - - [08/Sep/2017 17:37:14] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41908 - - [08/Sep/2017 17:37:15] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41909 - - [08/Sep/2017 17:37:15] "HTTP/1.1 GET /order/list" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:41912 - - [08/Sep/2017 17:37:19] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+127.0.0.1:41915 - - [08/Sep/2017 17:37:48] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41917 - - [08/Sep/2017 17:37:49] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41918 - - [08/Sep/2017 17:37:49] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:41921 - - [08/Sep/2017 17:38:05] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:41924 - - [08/Sep/2017 17:38:06] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41923 - - [08/Sep/2017 17:38:06] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:41927 - - [08/Sep/2017 17:38:07] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:41929 - - [08/Sep/2017 17:38:16] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:41931 - - [08/Sep/2017 17:38:31] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:41933 - - [08/Sep/2017 17:38:38] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:41935 - - [08/Sep/2017 17:38:44] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:41937 - - [08/Sep/2017 17:38:48] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:41939 - - [08/Sep/2017 17:38:51] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:41942 - - [08/Sep/2017 17:39:34] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41944 - - [08/Sep/2017 17:39:34] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41945 - - [08/Sep/2017 17:39:34] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41948 - - [08/Sep/2017 17:39:39] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41950 - - [08/Sep/2017 17:39:39] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41951 - - [08/Sep/2017 17:39:39] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+
+127.0.0.1:41957 - - [08/Sep/2017 17:40:02] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41956 - - [08/Sep/2017 17:40:02] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41954 - - [08/Sep/2017 17:40:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:41960 - - [08/Sep/2017 17:40:28] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41963 - - [08/Sep/2017 17:40:29] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41962 - - [08/Sep/2017 17:40:29] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41966 - - [08/Sep/2017 17:40:57] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:41968 - - [08/Sep/2017 17:40:58] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41969 - - [08/Sep/2017 17:40:58] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=54
+127.0.0.1:41972 - - [08/Sep/2017 17:41:00] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:41974 - - [08/Sep/2017 17:41:06] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:41977 - - [08/Sep/2017 17:42:48] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41980 - - [08/Sep/2017 17:42:49] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41979 - - [08/Sep/2017 17:42:49] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:41983 - - [08/Sep/2017 17:43:10] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:41985 - - [08/Sep/2017 17:43:11] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:41986 - - [08/Sep/2017 17:43:11] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41990 - - [08/Sep/2017 17:43:36] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:41993 - - [08/Sep/2017 17:43:37] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:41992 - - [08/Sep/2017 17:43:37] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:41996 - - [08/Sep/2017 17:44:54] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:41998 - - [08/Sep/2017 17:44:54] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:41999 - - [08/Sep/2017 17:44:54] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42002 - - [08/Sep/2017 17:44:59] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42004 - - [08/Sep/2017 17:45:17] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42007 - - [08/Sep/2017 17:45:18] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:42006 - - [08/Sep/2017 17:45:18] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42010 - - [08/Sep/2017 17:45:21] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42013 - - [08/Sep/2017 17:45:38] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42015 - - [08/Sep/2017 17:45:48] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42018 - - [08/Sep/2017 17:45:48] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:42017 - - [08/Sep/2017 17:45:48] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:42021 - - [08/Sep/2017 17:46:12] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42023 - - [08/Sep/2017 17:46:25] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:42026 - - [08/Sep/2017 17:46:26] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:42025 - - [08/Sep/2017 17:46:26] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42029 - - [08/Sep/2017 17:46:57] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42032 - - [08/Sep/2017 17:46:57] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42031 - - [08/Sep/2017 17:46:57] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42036 - - [08/Sep/2017 17:47:46] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42038 - - [08/Sep/2017 17:47:50] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42040 - - [08/Sep/2017 17:48:14] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42042 - - [08/Sep/2017 17:48:15] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:42043 - - [08/Sep/2017 17:48:15] "HTTP/1.1 GET /order/list" - 200 OK
+
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:42046 - - [08/Sep/2017 17:48:16] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42048 - - [08/Sep/2017 17:48:49] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42050 - - [08/Sep/2017 17:48:50] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42051 - - [08/Sep/2017 17:48:50] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42054 - - [08/Sep/2017 17:48:52] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42056 - - [08/Sep/2017 17:48:53] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42057 - - [08/Sep/2017 17:48:53] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42060 - - [08/Sep/2017 17:48:55] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42062 - - [08/Sep/2017 17:48:56] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42064 - - [08/Sep/2017 17:49:17] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42066 - - [08/Sep/2017 17:49:18] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42067 - - [08/Sep/2017 17:49:18] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:42070 - - [08/Sep/2017 17:49:20] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42073 - - [08/Sep/2017 17:49:37] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:42075 - - [08/Sep/2017 17:49:38] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42076 - - [08/Sep/2017 17:49:38] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:42079 - - [08/Sep/2017 17:49:40] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42081 - - [08/Sep/2017 17:51:10] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:42082 - - [08/Sep/2017 17:51:10] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42085 - - [08/Sep/2017 17:51:13] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42089 - - [08/Sep/2017 17:53:56] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42092 - - [08/Sep/2017 17:53:57] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:42091 - - [08/Sep/2017 17:53:57] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42095 - - [08/Sep/2017 17:54:32] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42097 - - [08/Sep/2017 17:54:33] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42098 - - [08/Sep/2017 17:54:33] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42102 - - [08/Sep/2017 17:55:51] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42104 - - [08/Sep/2017 17:55:52] "HTTP/1.1 GET /order/follow/list" - 200 OK0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42105 - - [08/Sep/2017 17:55:52] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:42108 - - [08/Sep/2017 17:56:20] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42110 - - [08/Sep/2017 17:56:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42112 - - [08/Sep/2017 17:56:46] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42114 - - [08/Sep/2017 17:56:47] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42116 - - [08/Sep/2017 17:56:47] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42118 - - [08/Sep/2017 17:56:54] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42120 - - [08/Sep/2017 17:56:54] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42122 - - [08/Sep/2017 17:56:54] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42124 - - [08/Sep/2017 17:57:01] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:42127 - - [08/Sep/2017 17:57:01] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42126 - - [08/Sep/2017 17:57:01] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:42130 - - [08/Sep/2017 17:57:09] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42132 - - [08/Sep/2017 17:57:09] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42133 - - [08/Sep/2017 17:57:09] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42136 - - [08/Sep/2017 17:57:13] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42139 - - [08/Sep/2017 17:57:13] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:42138 - - [08/Sep/2017 17:57:13] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:42143 - - [08/Sep/2017 17:57:45] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42145 - - [08/Sep/2017 17:58:36] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42147 - - [08/Sep/2017 17:58:37] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42148 - - [08/Sep/2017 17:58:37] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42151 - - [08/Sep/2017 17:58:47] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1504864745205-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJcc2d9111c5d56945964001bce4c9e3723.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '325', 'create', 'Sadf', 1504864755.0, 'https://pic-pre.meixincdn.com/1504864755547-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJc9500684a86ac9e907f78e342097cf7cc.jpg', '')
+0.0 (2): SELECT last_insert_id();
+127.0.0.1:42155 - - [08/Sep/2017 17:59:15] "HTTP/1.1 POST /order/create" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=55
+127.0.0.1:42158 - - [08/Sep/2017 17:59:28] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42161 - - [08/Sep/2017 17:59:34] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:42160 - - [08/Sep/2017 17:59:34] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42164 - - [08/Sep/2017 17:59:42] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42167 - - [08/Sep/2017 17:59:43] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:42166 - - [08/Sep/2017 17:59:44] "HTTP/1.1 GET /order/list" - 200 OK
+
+0.0 (1): SELECT * FROM s_order WHERE id=55
+127.0.0.1:42170 - - [08/Sep/2017 18:00:13] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): UPDATE s_order SET cancel = 'yes' WHERE id=55
+127.0.0.1:42172 - - [08/Sep/2017 18:00:18] "HTTP/1.1 POST /order/cancel" - 200 OK
+127.0.0.1:42174 - - [08/Sep/2017 18:00:25] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:42177 - - [08/Sep/2017 18:00:30] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42176 - - [08/Sep/2017 18:00:30] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:42181 - - [08/Sep/2017 18:03:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42184 - - [08/Sep/2017 18:04:26] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42186 - - [08/Sep/2017 18:04:28] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42187 - - [08/Sep/2017 18:04:28] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:42190 - - [08/Sep/2017 18:04:30] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:42192 - - [08/Sep/2017 18:04:37] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42194 - - [08/Sep/2017 18:05:03] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42197 - - [08/Sep/2017 18:05:27] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42199 - - [08/Sep/2017 18:05:30] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:42200 - - [08/Sep/2017 18:05:30] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42203 - - [08/Sep/2017 18:05:35] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42206 - - [08/Sep/2017 18:05:36] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:42205 - - [08/Sep/2017 18:05:36] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42209 - - [08/Sep/2017 18:05:59] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42211 - - [08/Sep/2017 18:06:00] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42212 - - [08/Sep/2017 18:06:00] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42215 - - [08/Sep/2017 18:06:16] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:42217 - - [08/Sep/2017 18:06:17] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42218 - - [08/Sep/2017 18:06:17] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:42221 - - [08/Sep/2017 18:07:11] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42224 - - [08/Sep/2017 18:07:11] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:42223 - - [08/Sep/2017 18:07:11] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:42227 - - [08/Sep/2017 18:07:18] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42230 - - [08/Sep/2017 18:07:19] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42229 - - [08/Sep/2017 18:07:19] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:42234 - - [08/Sep/2017 18:08:25] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42237 - - [08/Sep/2017 18:08:26] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:42236 - - [08/Sep/2017 18:08:26] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:42240 - - [08/Sep/2017 18:09:07] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42243 - - [08/Sep/2017 18:09:07] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:42242 - - [08/Sep/2017 18:09:07] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:42247 - - [08/Sep/2017 18:09:39] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42249 - - [08/Sep/2017 18:09:41] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42251 - - [08/Sep/2017 18:09:41] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=55
+127.0.0.1:42253 - - [08/Sep/2017 18:09:43] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42255 - - [08/Sep/2017 18:10:51] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42258 - - [08/Sep/2017 18:10:54] "HTTP/1.1 GET /order/follow/list" - 200 OK
+ 127.0.0.1:42257 - - [08/Sep/2017 18:10:54] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=55
+127.0.0.1:42261 - - [08/Sep/2017 18:10:55] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42264 - - [08/Sep/2017 18:11:31] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42267 - - [08/Sep/2017 18:11:33] "HTTP/1.1 GET /order/follow/list" - 200 OK
+ 127.0.0.1:42266 - - [08/Sep/2017 18:11:33] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42270 - - [08/Sep/2017 18:11:35] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42272 - - [08/Sep/2017 18:11:58] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:42273 - - [08/Sep/2017 18:11:58] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42276 - - [08/Sep/2017 18:12:24] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42278 - - [08/Sep/2017 18:12:49] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42280 - - [08/Sep/2017 18:12:49] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=54
+127.0.0.1:42282 - - [08/Sep/2017 18:12:55] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=52
+127.0.0.1:42284 - - [08/Sep/2017 18:12:58] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42286 - - [08/Sep/2017 18:13:02] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42289 - - [08/Sep/2017 18:13:34] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42291 - - [08/Sep/2017 18:13:34] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:42293 - - [08/Sep/2017 18:13:38] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:42295 - - [08/Sep/2017 18:13:50] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:42815 - - [09/Sep/2017 11:33:19] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42819 - - [09/Sep/2017 11:37:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42821 - - [09/Sep/2017 11:37:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42823 - - [09/Sep/2017 11:37:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42825 - - [09/Sep/2017 11:37:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42828 - - [09/Sep/2017 11:39:16] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42832 - - [09/Sep/2017 11:43:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42835 - - [09/Sep/2017 11:45:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42838 - - [09/Sep/2017 11:46:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42840 - - [09/Sep/2017 11:47:06] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42842 - - [09/Sep/2017 11:47:16] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42844 - - [09/Sep/2017 11:47:45] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42846 - - [09/Sep/2017 11:47:50] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42849 - - [09/Sep/2017 11:49:35] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42851 - - [09/Sep/2017 11:49:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42853 - - [09/Sep/2017 11:50:26] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42856 - - [09/Sep/2017 11:50:41] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42858 - - [09/Sep/2017 11:51:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42860 - - [09/Sep/2017 11:51:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42863 - - [09/Sep/2017 11:53:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42865 - - [09/Sep/2017 11:53:39] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42868 - - [09/Sep/2017 11:55:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42871 - - [09/Sep/2017 11:57:19] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42874 - - [09/Sep/2017 11:58:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42876 - - [09/Sep/2017 11:58:52] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42878 - - [09/Sep/2017 11:59:08] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42880 - - [09/Sep/2017 11:59:39] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42882 - - [09/Sep/2017 11:59:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42884 - - [09/Sep/2017 12:00:25] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42887 - - [09/Sep/2017 12:00:41] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42889 - - [09/Sep/2017 12:01:56] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42891 - - [09/Sep/2017 12:02:06] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42893 - - [09/Sep/2017 12:02:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42895 - - [09/Sep/2017 12:02:32] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42898 - - [09/Sep/2017 12:03:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42900 - - [09/Sep/2017 12:03:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42902 - - [09/Sep/2017 12:03:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42905 - - [09/Sep/2017 12:05:20] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42907 - - [09/Sep/2017 12:06:25] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42910 - - [09/Sep/2017 12:07:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42912 - - [09/Sep/2017 12:08:00] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42914 - - [09/Sep/2017 12:08:07] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42916 - - [09/Sep/2017 12:08:33] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42920 - - [09/Sep/2017 12:11:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42923 - - [09/Sep/2017 12:13:08] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42925 - - [09/Sep/2017 12:13:17] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42927 - - [09/Sep/2017 12:13:47] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42930 - - [09/Sep/2017 12:15:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42932 - - [09/Sep/2017 12:15:57] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42934 - - [09/Sep/2017 12:16:29] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42937 - - [09/Sep/2017 12:16:45] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42939 - - [09/Sep/2017 12:16:57] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42941 - - [09/Sep/2017 12:17:51] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42943 - - [09/Sep/2017 12:18:15] "HTTP/1.1 GET /order/openid" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:42945 - - [09/Sep/2017 12:18:16] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:42948 - - [09/Sep/2017 12:18:16] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:42947 - - [09/Sep/2017 12:18:16] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:42951 - - [09/Sep/2017 12:18:19] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42953 - - [09/Sep/2017 12:18:30] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42956 - - [09/Sep/2017 12:18:47] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42958 - - [09/Sep/2017 12:19:03] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42960 - - [09/Sep/2017 12:19:27] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42962 - - [09/Sep/2017 12:20:04] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42964 - - [09/Sep/2017 12:20:27] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42967 - - [09/Sep/2017 12:21:05] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42969 - - [09/Sep/2017 12:21:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42972 - - [09/Sep/2017 12:24:03] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42975 - - [09/Sep/2017 12:24:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42977 - - [09/Sep/2017 12:26:03] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42979 - - [09/Sep/2017 12:26:30] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42982 - - [09/Sep/2017 12:26:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42984 - - [09/Sep/2017 12:27:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42987 - - [09/Sep/2017 12:29:46] "HTTP/1.1 GET /order/openid" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:42989 - - [09/Sep/2017 12:29:47] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42991 - - [09/Sep/2017 12:29:47] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:42993 - - [09/Sep/2017 12:29:47] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:42995 - - [09/Sep/2017 12:29:59] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:42997 - - [09/Sep/2017 12:30:12] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43000 - - [09/Sep/2017 12:32:11] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43002 - - [09/Sep/2017 12:32:21] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43004 - - [09/Sep/2017 12:32:32] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43007 - - [09/Sep/2017 12:33:30] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43009 - - [09/Sep/2017 12:33:44] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43012 - - [09/Sep/2017 12:35:04] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43014 - - [09/Sep/2017 12:35:40] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43016 - - [09/Sep/2017 12:36:14] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43018 - - [09/Sep/2017 12:36:20] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43020 - - [09/Sep/2017 12:36:27] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43025 - - [09/Sep/2017 12:40:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43027 - - [09/Sep/2017 12:41:18] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43029 - - [09/Sep/2017 12:41:42] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43031 - - [09/Sep/2017 12:42:00] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43033 - - [09/Sep/2017 12:42:34] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43036 - - [09/Sep/2017 12:43:25] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43038 - - [09/Sep/2017 12:44:07] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43040 - - [09/Sep/2017 12:44:22] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43043 - - [09/Sep/2017 12:44:42] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43045 - - [09/Sep/2017 12:45:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43047 - - [09/Sep/2017 12:45:34] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43050 - - [09/Sep/2017 12:47:53] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43052 - - [09/Sep/2017 12:47:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43054 - - [09/Sep/2017 12:48:25] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43057 - - [09/Sep/2017 12:49:00] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43059 - - [09/Sep/2017 12:50:38] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43062 - - [09/Sep/2017 12:52:08] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43065 - - [09/Sep/2017 12:52:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43067 - - [09/Sep/2017 12:53:15] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43069 - - [09/Sep/2017 12:53:22] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43071 - - [09/Sep/2017 12:53:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43707 - - [10/Sep/2017 10:04:52] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:43710 - - [10/Sep/2017 10:05:04] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:43709 - - [10/Sep/2017 10:05:04] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:43741 - - [10/Sep/2017 11:01:22] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43743 - - [10/Sep/2017 11:01:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43747 - - [10/Sep/2017 11:05:35] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43749 - - [10/Sep/2017 11:05:54] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43752 - - [10/Sep/2017 11:07:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43754 - - [10/Sep/2017 11:08:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43756 - - [10/Sep/2017 11:08:15] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43758 - - [10/Sep/2017 11:08:18] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43760 - - [10/Sep/2017 11:08:28] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43763 - - [10/Sep/2017 11:08:51] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43765 - - [10/Sep/2017 11:09:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43767 - - [10/Sep/2017 11:09:11] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43769 - - [10/Sep/2017 11:09:26] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43771 - - [10/Sep/2017 11:09:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43773 - - [10/Sep/2017 11:09:44] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43775 - - [10/Sep/2017 11:09:51] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43777 - - [10/Sep/2017 11:10:13] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43780 - - [10/Sep/2017 11:10:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43782 - - [10/Sep/2017 11:10:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43784 - - [10/Sep/2017 11:10:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43786 - - [10/Sep/2017 11:11:11] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43788 - - [10/Sep/2017 11:11:17] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43790 - - [10/Sep/2017 11:11:22] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43792 - - [10/Sep/2017 11:11:33] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43794 - - [10/Sep/2017 11:11:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43797 - - [10/Sep/2017 11:12:47] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43799 - - [10/Sep/2017 11:13:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43802 - - [10/Sep/2017 11:14:40] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43804 - - [10/Sep/2017 11:15:41] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43806 - - [10/Sep/2017 11:16:20] "HTTP/1.1 GET /order/openid" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:43808 - - [10/Sep/2017 11:16:21] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:43811 - - [10/Sep/2017 11:16:21] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:43810 - - [10/Sep/2017 11:16:21] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:43815 - - [10/Sep/2017 11:17:17] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43817 - - [10/Sep/2017 11:17:29] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43820 - - [10/Sep/2017 11:20:22] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43823 - - [10/Sep/2017 11:20:47] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43825 - - [10/Sep/2017 11:21:06] "HTTP/1.1 GET /order/openid" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:43827 - - [10/Sep/2017 11:21:06] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:43830 - - [10/Sep/2017 11:21:07] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:43829 - - [10/Sep/2017 11:21:07] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:43833 - - [10/Sep/2017 11:21:13] "HTTP/1.1 GET /order/openid" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:43835 - - [10/Sep/2017 11:21:13] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:43837 - - [10/Sep/2017 11:21:14] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:43838 - - [10/Sep/2017 11:21:14] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:43841 - - [10/Sep/2017 11:21:15] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43843 - - [10/Sep/2017 11:21:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43845 - - [10/Sep/2017 11:21:57] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43847 - - [10/Sep/2017 11:22:16] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43850 - - [10/Sep/2017 11:23:14] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43852 - - [10/Sep/2017 11:23:35] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43854 - - [10/Sep/2017 11:23:56] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43856 - - [10/Sep/2017 11:24:12] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+
+127.0.0.1:43863 - - [10/Sep/2017 11:32:27] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:43862 - - [10/Sep/2017 11:32:27] "HTTP/1.1 GET /order/list" - 200 OK
+
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:43872 - - [10/Sep/2017 11:43:12] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+127.0.0.1:43875 - - [10/Sep/2017 11:43:13] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''
+127.0.0.1:43874 - - [10/Sep/2017 11:43:13] "HTTP/1.1 GET /order/list" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:43878 - - [10/Sep/2017 11:43:21] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE follow_id=''0.0 (1): SELECT * FROM s_order WHERE user_id=''
+
+127.0.0.1:43881 - - [10/Sep/2017 11:43:21] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:43880 - - [10/Sep/2017 11:43:21] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:43884 - - [10/Sep/2017 11:43:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43886 - - [10/Sep/2017 11:44:33] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43889 - - [10/Sep/2017 11:44:56] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43891 - - [10/Sep/2017 11:45:31] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43893 - - [10/Sep/2017 11:46:14] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43896 - - [10/Sep/2017 11:46:59] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43898 - - [10/Sep/2017 11:47:18] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43900 - - [10/Sep/2017 11:47:32] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43902 - - [10/Sep/2017 11:48:08] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43904 - - [10/Sep/2017 11:48:31] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43907 - - [10/Sep/2017 11:48:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43909 - - [10/Sep/2017 11:49:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43911 - - [10/Sep/2017 11:49:10] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43913 - - [10/Sep/2017 11:49:40] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43915 - - [10/Sep/2017 11:49:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43917 - - [10/Sep/2017 11:50:12] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43919 - - [10/Sep/2017 11:50:29] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43922 - - [10/Sep/2017 11:50:38] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43924 - - [10/Sep/2017 11:50:44] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43926 - - [10/Sep/2017 11:51:14] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43928 - - [10/Sep/2017 11:51:31] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43930 - - [10/Sep/2017 11:51:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43932 - - [10/Sep/2017 11:52:04] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43934 - - [10/Sep/2017 11:52:18] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43936 - - [10/Sep/2017 11:52:27] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43939 - - [10/Sep/2017 11:53:11] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43941 - - [10/Sep/2017 11:53:19] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43943 - - [10/Sep/2017 11:53:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43945 - - [10/Sep/2017 11:54:13] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43947 - - [10/Sep/2017 11:54:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43949 - - [10/Sep/2017 11:54:28] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43951 - - [10/Sep/2017 11:54:38] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43954 - - [10/Sep/2017 11:55:42] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43957 - - [10/Sep/2017 11:56:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43959 - - [10/Sep/2017 11:57:30] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43961 - - [10/Sep/2017 11:57:37] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43963 - - [10/Sep/2017 11:57:44] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43965 - - [10/Sep/2017 11:58:05] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43967 - - [10/Sep/2017 11:58:20] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43970 - - [10/Sep/2017 11:58:50] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43972 - - [10/Sep/2017 11:59:22] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43974 - - [10/Sep/2017 11:59:45] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43976 - - [10/Sep/2017 12:00:00] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43978 - - [10/Sep/2017 12:00:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43980 - - [10/Sep/2017 12:00:16] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43982 - - [10/Sep/2017 12:00:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43985 - - [10/Sep/2017 12:00:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43987 - - [10/Sep/2017 12:01:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43989 - - [10/Sep/2017 12:02:13] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43992 - - [10/Sep/2017 12:03:10] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43994 - - [10/Sep/2017 12:03:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43997 - - [10/Sep/2017 12:04:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:43999 - - [10/Sep/2017 12:05:11] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44001 - - [10/Sep/2017 12:05:25] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44003 - - [10/Sep/2017 12:05:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44005 - - [10/Sep/2017 12:06:08] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44007 - - [10/Sep/2017 12:06:28] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44009 - - [10/Sep/2017 12:06:39] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44012 - - [10/Sep/2017 12:06:51] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44014 - - [10/Sep/2017 12:07:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44016 - - [10/Sep/2017 12:08:18] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44018 - - [10/Sep/2017 12:08:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44020 - - [10/Sep/2017 12:08:36] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44023 - - [10/Sep/2017 12:08:54] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44025 - - [10/Sep/2017 12:09:07] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44027 - - [10/Sep/2017 12:09:13] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44029 - - [10/Sep/2017 12:09:54] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44032 - - [10/Sep/2017 12:10:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44034 - - [10/Sep/2017 12:11:47] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44036 - - [10/Sep/2017 12:12:01] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44038 - - [10/Sep/2017 12:12:16] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44040 - - [10/Sep/2017 12:12:27] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44042 - - [10/Sep/2017 12:12:39] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44045 - - [10/Sep/2017 12:13:16] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44047 - - [10/Sep/2017 12:13:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44049 - - [10/Sep/2017 12:13:51] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44051 - - [10/Sep/2017 12:13:59] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44053 - - [10/Sep/2017 12:14:06] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44055 - - [10/Sep/2017 12:14:21] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44058 - - [10/Sep/2017 12:14:47] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44060 - - [10/Sep/2017 12:14:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44062 - - [10/Sep/2017 12:16:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44064 - - [10/Sep/2017 12:16:42] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44067 - - [10/Sep/2017 12:16:57] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44069 - - [10/Sep/2017 12:17:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44071 - - [10/Sep/2017 12:17:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44074 - - [10/Sep/2017 12:20:05] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44076 - - [10/Sep/2017 12:20:22] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44078 - - [10/Sep/2017 12:20:34] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44080 - - [10/Sep/2017 12:20:35] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44083 - - [10/Sep/2017 12:21:13] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44085 - - [10/Sep/2017 12:21:37] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44087 - - [10/Sep/2017 12:22:06] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44089 - - [10/Sep/2017 12:22:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44091 - - [10/Sep/2017 12:22:12] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44093 - - [10/Sep/2017 12:22:14] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44096 - - [10/Sep/2017 12:22:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44099 - - [10/Sep/2017 12:25:40] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44101 - - [10/Sep/2017 12:25:53] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44103 - - [10/Sep/2017 12:26:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44105 - - [10/Sep/2017 12:26:14] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44107 - - [10/Sep/2017 12:26:26] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44109 - - [10/Sep/2017 12:26:27] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44112 - - [10/Sep/2017 12:26:46] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44114 - - [10/Sep/2017 12:27:45] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44116 - - [10/Sep/2017 12:28:07] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44118 - - [10/Sep/2017 12:28:42] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44121 - - [10/Sep/2017 12:28:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44123 - - [10/Sep/2017 12:29:10] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44125 - - [10/Sep/2017 12:29:27] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44127 - - [10/Sep/2017 12:29:31] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44129 - - [10/Sep/2017 12:29:42] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44131 - - [10/Sep/2017 12:30:05] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44133 - - [10/Sep/2017 12:30:26] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44135 - - [10/Sep/2017 12:30:39] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44138 - - [10/Sep/2017 12:30:57] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44140 - - [10/Sep/2017 12:31:00] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44142 - - [10/Sep/2017 12:31:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44144 - - [10/Sep/2017 12:31:14] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44146 - - [10/Sep/2017 12:31:26] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44148 - - [10/Sep/2017 12:31:41] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44150 - - [10/Sep/2017 12:31:45] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44152 - - [10/Sep/2017 12:31:50] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44154 - - [10/Sep/2017 12:31:57] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44156 - - [10/Sep/2017 12:32:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44158 - - [10/Sep/2017 12:32:17] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44161 - - [10/Sep/2017 12:33:12] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44163 - - [10/Sep/2017 12:33:55] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44165 - - [10/Sep/2017 12:34:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44167 - - [10/Sep/2017 12:34:13] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44169 - - [10/Sep/2017 12:34:28] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44172 - - [10/Sep/2017 12:35:05] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44174 - - [10/Sep/2017 12:36:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44177 - - [10/Sep/2017 12:36:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44180 - - [10/Sep/2017 12:38:12] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44182 - - [10/Sep/2017 12:38:16] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44186 - - [10/Sep/2017 12:39:04] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44185 - - [10/Sep/2017 12:39:04] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:44210 - - [10/Sep/2017 13:22:51] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44213 - - [10/Sep/2017 13:23:03] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44232 - - [10/Sep/2017 13:58:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44234 - - [10/Sep/2017 13:58:37] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44238 - - [10/Sep/2017 14:01:02] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44240 - - [10/Sep/2017 14:01:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44247 - - [10/Sep/2017 14:12:51] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44250 - - [10/Sep/2017 14:13:03] "HTTP/1.1 GET /order/openid" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:44252 - - [10/Sep/2017 14:13:04] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:44254 - - [10/Sep/2017 14:13:04] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:44255 - - [10/Sep/2017 14:13:04] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:44258 - - [10/Sep/2017 14:13:31] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44260 - - [10/Sep/2017 14:13:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44265 - - [10/Sep/2017 14:19:15] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44267 - - [10/Sep/2017 14:20:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44270 - - [10/Sep/2017 14:22:00] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44273 - - [10/Sep/2017 14:23:25] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44275 - - [10/Sep/2017 14:23:59] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44277 - - [10/Sep/2017 14:24:17] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44280 - - [10/Sep/2017 14:26:47] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44283 - - [10/Sep/2017 14:27:32] "HTTP/1.1 GET /order/openid" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:44285 - - [10/Sep/2017 14:27:33] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44287 - - [10/Sep/2017 14:27:33] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44289 - - [10/Sep/2017 14:27:33] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:44291 - - [10/Sep/2017 14:28:25] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44294 - - [10/Sep/2017 14:29:43] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1505025023301-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJc79331966529bd02bdef98b1bc654e08d.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '500.00', 'create', 'Asda', 1505025027.0, 'https://pic-pre.meixincdn.com/1505025027730-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJccee389a18e4b13263b70c2570efb8b93.jpg', '')
+0.0 (2): SELECT last_insert_id();
+127.0.0.1:44298 - - [10/Sep/2017 14:30:27] "HTTP/1.1 POST /order/create" - 200 OK
+0.0 (1): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1505025023301-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJc79331966529bd02bdef98b1bc654e08d.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '45.00', 'create', 'Asda', 1505025033.0, 'https://pic-pre.meixincdn.com/1505025027730-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJccee389a18e4b13263b70c2570efb8b93.jpg', '')
+0.0 (2): SELECT last_insert_id();
+127.0.0.1:44300 - - [10/Sep/2017 14:30:33] "HTTP/1.1 POST /order/create" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=57
+127.0.0.1:44302 - - [10/Sep/2017 14:30:40] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44304 - - [10/Sep/2017 14:30:57] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44305 - - [10/Sep/2017 14:30:57] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:44309 - - [10/Sep/2017 14:32:08] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:44312 - - [10/Sep/2017 14:32:12] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:44311 - - [10/Sep/2017 14:32:12] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:44317 - - [10/Sep/2017 14:36:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44319 - - [10/Sep/2017 14:37:01] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44325 - - [10/Sep/2017 14:43:22] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44327 - - [10/Sep/2017 14:43:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44329 - - [10/Sep/2017 14:44:37] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44331 - - [10/Sep/2017 14:44:45] "HTTP/1.1 GET /order/openid" - 200 OK
+ERR: SELECT * FROM s_order WHERE id=undefined
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 116, in GET
+    order = db.select('s_order', where="id=%s"%order_id)[0]
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 699, in select
+    return self.query(qout, processed=True)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 659, in query
+    self._db_execute(db_cursor, sql_query)
+  File "/usr/lib/python2.7/site-packages/web/db.py", line 591, in _db_execute
+    out = cur.execute(query, params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'undefined' in 'where clause'")
+
+127.0.0.1:44333 - - [10/Sep/2017 14:44:46] "HTTP/1.1 GET /order/get" - 500 Internal Server Error
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:44335 - - [10/Sep/2017 14:44:47] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:44336 - - [10/Sep/2017 14:44:47] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:44340 - - [10/Sep/2017 14:45:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44343 - - [10/Sep/2017 14:48:20] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44345 - - [10/Sep/2017 14:48:39] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44347 - - [10/Sep/2017 14:48:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44350 - - [10/Sep/2017 14:49:34] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44352 - - [10/Sep/2017 14:49:44] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44355 - - [10/Sep/2017 14:51:16] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44357 - - [10/Sep/2017 14:51:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44359 - - [10/Sep/2017 14:52:58] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44361 - - [10/Sep/2017 14:53:09] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44364 - - [10/Sep/2017 14:53:28] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1505026548959-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJca808f88f5c60e395ef44b3506ee5eebd.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '500.00', 'create', '', 1505026552.0, 'https://pic-pre.meixincdn.com/1505026552836-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJc5a7eaa3c214f6609792e7f31b486bd82.jpg', '')
+0.0 (2): SELECT last_insert_id();
+127.0.0.1:44369 - - [10/Sep/2017 14:55:52] "HTTP/1.1 POST /order/create" - 200 OK
+127.0.0.1:44374 - - [10/Sep/2017 15:01:40] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1505026911749-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJc654ba3a1a80370c5f9b28e76afff17ba.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '500.00', 'create', '1233', 1505026920.0, 'https://pic-pre.meixincdn.com/1505026916014-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJcdcca804bc62ed9b3856d2ee6aaa2ca72.jpg', '')
+0.0 (2): SELECT last_insert_id();
+127.0.0.1:44378 - - [10/Sep/2017 15:02:00] "HTTP/1.1 POST /order/create" - 200 OK
+0.0 (1): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1505026911749-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJc654ba3a1a80370c5f9b28e76afff17ba.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '500.00', 'create', '1233', 1505026991.0, 'https://pic-pre.meixincdn.com/1505026916014-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJcdcca804bc62ed9b3856d2ee6aaa2ca72.jpg', '')
+0.0 (2): SELECT last_insert_id();
+127.0.0.1:44380 - - [10/Sep/2017 15:03:11] "HTTP/1.1 POST /order/create" - 200 OK
+127.0.0.1:44383 - - [10/Sep/2017 15:05:10] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44386 - - [10/Sep/2017 15:05:33] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:44388 - - [10/Sep/2017 15:05:39] "HTTP/1.1 GET /order/list" - 200 OK127.0.0.1:44389 - - [10/Sep/2017 15:05:39] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:44392 - - [10/Sep/2017 15:06:23] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=60
+127.0.0.1:44394 - - [10/Sep/2017 15:06:29] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:44396 - - [10/Sep/2017 15:06:34] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:44397 - - [10/Sep/2017 15:06:34] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:44401 - - [10/Sep/2017 15:08:23] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44403 - - [10/Sep/2017 15:08:39] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44405 - - [10/Sep/2017 15:08:53] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44408 - - [10/Sep/2017 15:10:25] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44410 - - [10/Sep/2017 15:10:35] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44413 - - [10/Sep/2017 15:11:17] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44415 - - [10/Sep/2017 15:11:21] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44417 - - [10/Sep/2017 15:12:26] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44420 - - [10/Sep/2017 15:13:26] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44422 - - [10/Sep/2017 15:14:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44424 - - [10/Sep/2017 15:14:53] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44427 - - [10/Sep/2017 15:15:40] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44433 - - [10/Sep/2017 15:19:51] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44435 - - [10/Sep/2017 15:20:03] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44437 - - [10/Sep/2017 15:20:26] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44439 - - [10/Sep/2017 15:20:26] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:44442 - - [10/Sep/2017 15:21:31] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44444 - - [10/Sep/2017 15:21:47] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44446 - - [10/Sep/2017 15:22:21] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44448 - - [10/Sep/2017 15:22:28] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44450 - - [10/Sep/2017 15:23:01] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44452 - - [10/Sep/2017 15:23:08] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44454 - - [10/Sep/2017 15:23:15] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44457 - - [10/Sep/2017 15:23:43] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44459 - - [10/Sep/2017 15:24:10] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44461 - - [10/Sep/2017 15:24:24] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44466 - - [10/Sep/2017 15:27:48] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44469 - - [10/Sep/2017 15:28:34] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44472 - - [10/Sep/2017 15:29:03] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1505028570841-wx-file.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '500.00', 'create', '\xe5\x95\x8a\xe5\x95\x8a\xe5\x95\x8a\xe5\x95\x8a', 1505028570.0, 'https://pic-pre.meixincdn.com/1505028559331-wx-file.jpg', '')
+0.0 (2): SELECT last_insert_id();
+127.0.0.1:44477 - - [10/Sep/2017 15:29:30] "HTTP/1.1 POST /order/create" - 200 OK
+127.0.0.1:44479 - - [10/Sep/2017 15:30:20] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44481 - - [10/Sep/2017 15:31:08] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44484 - - [10/Sep/2017 15:31:19] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44486 - - [10/Sep/2017 15:32:04] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44488 - - [10/Sep/2017 15:32:04] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=51
+127.0.0.1:44490 - - [10/Sep/2017 15:32:08] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=55
+127.0.0.1:44492 - - [10/Sep/2017 15:32:19] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:44495 - - [10/Sep/2017 15:34:29] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44497 - - [10/Sep/2017 15:34:59] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44499 - - [10/Sep/2017 15:35:01] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44501 - - [10/Sep/2017 15:35:01] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:44505 - - [10/Sep/2017 15:36:16] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1505029019806-wx-file.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '321.00', 'create', '\xe9\xa6\x99\xe8\x95\x89', 1505029024.0, 'https://pic-pre.meixincdn.com/1505029024673-wx-file.jpg', '')
+0.0 (2): SELECT last_insert_id();
+127.0.0.1:44509 - - [10/Sep/2017 15:37:04] "HTTP/1.1 POST /order/create" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=62
+127.0.0.1:44512 - - [10/Sep/2017 15:37:17] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44514 - - [10/Sep/2017 15:37:28] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44516 - - [10/Sep/2017 15:37:28] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=62
+127.0.0.1:44518 - - [10/Sep/2017 15:37:52] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): UPDATE s_order SET cancel = 'yes' WHERE id=62
+127.0.0.1:44520 - - [10/Sep/2017 15:37:55] "HTTP/1.1 POST /order/cancel" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44522 - - [10/Sep/2017 15:38:03] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44524 - - [10/Sep/2017 15:38:03] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44526 - - [10/Sep/2017 15:38:06] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44528 - - [10/Sep/2017 15:38:06] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=50
+127.0.0.1:44530 - - [10/Sep/2017 15:38:07] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=62
+127.0.0.1:44532 - - [10/Sep/2017 15:38:11] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=62
+127.0.0.1:44534 - - [10/Sep/2017 15:38:18] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:44537 - - [10/Sep/2017 15:40:31] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:44539 - - [10/Sep/2017 15:40:35] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:44541 - - [10/Sep/2017 15:40:36] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:44542 - - [10/Sep/2017 15:40:36] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44545 - - [10/Sep/2017 15:40:56] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44547 - - [10/Sep/2017 15:40:56] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:44550 - - [10/Sep/2017 15:42:11] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:44553 - - [10/Sep/2017 15:42:11] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:44552 - - [10/Sep/2017 15:42:11] "HTTP/1.1 GET /order/list" - 200 OK
+
+127.0.0.1:44556 - - [10/Sep/2017 15:42:26] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:44559 - - [10/Sep/2017 15:42:27] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:44558 - - [10/Sep/2017 15:42:27] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:44562 - - [10/Sep/2017 15:42:41] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:44564 - - [10/Sep/2017 15:42:41] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:44565 - - [10/Sep/2017 15:42:41] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:44568 - - [10/Sep/2017 15:43:05] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:44570 - - [10/Sep/2017 15:43:06] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:44571 - - [10/Sep/2017 15:43:06] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44574 - - [10/Sep/2017 15:43:09] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44576 - - [10/Sep/2017 15:43:09] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:44579 - - [10/Sep/2017 15:44:03] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:44582 - - [10/Sep/2017 15:44:03] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:44581 - - [10/Sep/2017 15:44:03] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:44585 - - [10/Sep/2017 15:44:12] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'127.0.0.1:44588 - - [10/Sep/2017 15:44:13] "HTTP/1.1 GET /order/follow/list" - 200 OK
+
+127.0.0.1:44587 - - [10/Sep/2017 15:44:13] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:44591 - - [10/Sep/2017 15:44:30] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+ 0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44593 - - [10/Sep/2017 15:44:30] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:44594 - - [10/Sep/2017 15:44:30] "HTTP/1.1 GET /order/list" - 200 OK
+
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44597 - - [10/Sep/2017 15:44:44] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44599 - - [10/Sep/2017 15:44:44] "HTTP/1.1 GET /order/follow/list" - 200 OK
+127.0.0.1:44601 - - [10/Sep/2017 15:45:16] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+
+127.0.0.1:44603 - - [10/Sep/2017 15:45:16] "HTTP/1.1 GET /order/follow/list" - 200 OK127.0.0.1:44604 - - [10/Sep/2017 15:45:16] "HTTP/1.1 GET /order/list" - 200 OK
+
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44608 - - [10/Sep/2017 15:45:24] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:44610 - - [10/Sep/2017 15:45:24] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=62
+127.0.0.1:44616 - - [10/Sep/2017 15:53:47] "HTTP/1.1 GET /order/get" - 200 OK
+127.0.0.1:44618 - - [10/Sep/2017 15:53:47] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE id=62
+127.0.0.1:44620 - - [10/Sep/2017 15:53:48] "HTTP/1.1 GET /order/get" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id=''
+127.0.0.1:45166 - - [11/Sep/2017 10:03:18] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id=''
+127.0.0.1:45167 - - [11/Sep/2017 10:03:18] "HTTP/1.1 GET /order/list" - 200 OK
+127.0.0.1:45165 - - [11/Sep/2017 10:03:18] "HTTP/1.1 GET /order/openid" - 200 OK
+127.0.0.1:45171 - - [11/Sep/2017 10:03:28] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs' ORDER BY create_time desc
+127.0.0.1:45183 - - [11/Sep/2017 10:23:53] "HTTP/1.1 GET /order/list" - 200 OK
+0.0 (1): SELECT * FROM s_order WHERE follow_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs' ORDER BY create_time desc
+127.0.0.1:45185 - - [11/Sep/2017 10:24:05] "HTTP/1.1 GET /order/follow/list" - 200 OK
+0.0 (1): SELECT * FROM pay_info WHERE user_id='xxx'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/app/fly/code.py", line 39, in GET
+    pay_info = db.select('pay_info', where="user_id='%s'"%openid)[0]
+  File "/usr/lib/python2.7/site-packages/web/utils.py", line 705, in __getitem__
+    raise IndexError, str(i)
+IndexError: 0
+
+127.0.0.1:45188 - - [11/Sep/2017 10:24:40] "HTTP/1.1 GET /order/moneypic" - 500 Internal Server Error
+127.0.0.1:45190 - - [11/Sep/2017 10:25:05] "HTTP/1.1 GET /order/openid" - 200 OK
+0.0 (1): INSERT INTO pay_info (money_pic, user_id) VALUES ('https://pic-pre.meixincdn.com/1505096722327-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJc2b8b9e0ed992b78fd157fdb8ac1bba8e.jpg', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs')
+0.0 (2): SELECT last_insert_id();
+0.0 (3): INSERT INTO s_order (item_pic, follow_id, user_id, nick_name, price, status, item_name, create_time, money_pic, cancel) VALUES ('https://pic-pre.meixincdn.com/1505096717562-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJcb70a5b47f86b76d122305e86e10596c0.jpg', '', 'ocAEe0QH2eZdE8ZP-UK-iJg6vEYs', 'INSIDE', '500.00', 'create', '2333', 1505096722.0, 'https://pic-pre.meixincdn.com/1505096722327-tmp_1505003545o6zAJs9k3xAT1N0UFPav4givIFJc2b8b9e0ed992b78fd157fdb8ac1bba8e.jpg', '')
+0.0 (4): SELECT last_insert_id();
+127.0.0.1:45194 - - [11/Sep/2017 10:25:22] "HTTP/1.1 POST /order/create" - 200 OK
+0.0 (1): SELECT * FROM pay_info WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:45196 - - [11/Sep/2017 10:25:36] "HTTP/1.1 GET /order/moneypic" - 200 OK
+0.0 (1): SELECT * FROM pay_info WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:45198 - - [11/Sep/2017 10:25:42] "HTTP/1.1 GET /order/moneypic" - 200 OK
+0.0 (1): SELECT * FROM pay_info WHERE user_id='ocAEe0QH2eZdE8ZP-UK-iJg6vEYs'
+127.0.0.1:45200 - - [11/Sep/2017 10:25:42] "HTTP/1.1 GET /order/moneypic" - 200 OK
